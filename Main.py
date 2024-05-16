@@ -31,7 +31,7 @@ from Function import AddOrder, EditOrder, SearchOrder, SumUpOrder, SavingOrder
 app = Flask(__name__)
 
 configuration = Configuration(access_token='your token')
-handler = WebhookHandler('your URL')
+handler = WebhookHandler('your webhook token')
 
 
 @app.route("/callback", methods=['POST'])
